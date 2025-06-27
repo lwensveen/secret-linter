@@ -1,5 +1,11 @@
 # secret-linter
 
+## 0.1.1
+
+### Patch Changes
+
+- [`d121dc8`](https://github.com/lwensveen/secret-linter/commit/d121dc87ce4355920a290a44b70dbac109cd8ae4) Thanks [@lwensveen](https://github.com/lwensveen)! - Bring version to 0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
