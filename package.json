@@ -1,7 +1,7 @@
 {
   "name": "secret-linter",
   "description": "Catch hard-coded secrets and weak credentials in your repo.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Lodewijk Wensveen",
   "bin": {
     "secret-linter": "dist/cli.js"
