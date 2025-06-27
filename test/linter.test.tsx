@@ -2,6 +2,8 @@ import { describe, it, expect, vi } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 import { lintSecrets, findingsToSarif } from '../src/index.js';
+import { render } from 'ink-testing-library';
+import { LintUI } from '../src/ui.js';
 
 const fx = (...p: string[]) => path.join(__dirname, '..', '__fixtures__', ...p);
 
@@ -53,5 +55,9 @@ describe('secret-linter', () => {
 
     expect(sarif.version).toBe('2.1.0');
     expect(sarif.runs[0].results).toHaveLength(1);
+  });
+
+  it('renders TUI without crashing', () => {
+    render(<LintUI dir="__fixtures__/basic/bad" staged={false} />);
   });
 });
